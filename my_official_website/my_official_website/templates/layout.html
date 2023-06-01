@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Nguyen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'layout.css')}}">
+</head>
+<body>
+    <div class="nav">
+        <a href="{{ url_for('skills')}}">Skills</a>
+        <a href="{{ url_for('projects')}}">Projects</a>
+        <a href="{{ url_for('stats')}}">Stats</a>
+        <a href="{{ url_for('questions')}}">Questions</a>
+        <a href="{{ url_for('activity')}}">Activities</a>
+        <a href="{{ url_for('todos')}}">To Do's</a>
+        <a href="{{ url_for('journey')}}">My Journey</a>
+        
+    </div>
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

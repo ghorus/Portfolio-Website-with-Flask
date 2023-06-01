@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'activity.css')}}">
+<div class="activities">
+    <div class="activity">
+        <p>6/1/2023</p>
+        <p>#I Watched</p>
+        <p>A YouTuber named <a href="https://www.youtube.com/watch?v=4ALB5m_Idkk">William Lin</a>,
+        to #learn how Leetcode Contests work</p>
+    </div>
+    <div class="activity">
+        <p>Recap</p>
+        <p>I #learned a lot about how framework languages work by first learning Shopify Liquid. I #made my own Shopify theme from scratch.
+            This past month, I've watched hours' worth of YouTube videos on topics like: UX UI Designing, Flask tutorials, Javascript vs JQuery,
+            how to use Spline, graphic designing, Ruby on Rails, and much more.
+        </p>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'projects.css')}}">
+<div class="projects">
+    <div class="project">
+        <video width="500" controls>
+            <source src="{{ url_for('static', filename = 'dodging game.mp4')}}" type="video/mp4">
+          </video>
+    </div>
+    <div class="project">
+        <video width="500" controls>
+            <source src="{{ url_for('static', filename = 'jump game.mp4')}}" type="video/mp4">
+          </video>
+    </div>
+    <div class="project">
+        <video width="500"controls>
+            <source src="{{ url_for('static', filename = 'socket.mp4')}}" type="video/mp4">
+          </video>
+    </div>
+    <div class="project">
+        <video width="500" controls>
+            <source src="{{ url_for('static', filename = 'schpoople.mp4')}}" type="video/mp4">
+          </video>
+    </div>
+    <div class="project">
+        <img src="{{ url_for('static', filename = 'UXUI1.png')}}" width="500">
+    </div>
+    <div class="project">
+        <img src="{{ url_for('static', filename = 'UXUI2.png')}}" width="500">
+    </div>
+    <div class="project">
+        <img src="{{ url_for('static', filename = 'UXUI3.png')}}" width="500">
+    </div>
+    <div class="project">
+        <img src="{{ url_for('static', filename = 'UXUI4.png')}}" width="500">
+    </div>
+</div>
+{% endblock content %}

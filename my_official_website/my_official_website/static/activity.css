@@ -1,0 +1,10 @@
+.activities {
+    display: grid;
+    grid-template-columns: 1000px;
+}
+.activity {
+    border: 1px solid;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
